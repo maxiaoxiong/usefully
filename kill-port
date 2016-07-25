@@ -1,0 +1,15 @@
+windows: netstat -aon | more
+ubuntu : sudo netstat -plnt
+
+ubuntu style:
+Active Internet connections (only servers)
+Proto Recv-Q Send-Q Local Address           Foreign Address         State       PID/Program name
+tcp        0      0 127.0.0.1:3306          0.0.0.0:*               LISTEN      848/mysqld      
+tcp        0      0 127.0.0.1:6379          0.0.0.0:*               LISTEN      897/redis-server 12
+tcp        0      0 127.0.0.1:63342         0.0.0.0:*               LISTEN      2646/java       
+tcp        0      0 0.0.0.0:80              0.0.0.0:*               LISTEN      1191/nginx.conf 
+tcp        0      0 127.0.1.1:53            0.0.0.0:*               LISTEN      2325/dnsmasq    
+tcp        0      0 127.0.0.1:6942          0.0.0.0:*               LISTEN      2646/java       
+tcp        0      0 127.0.0.1:8000          0.0.0.0:*               LISTEN      3613/php7.0     
+tcp        0      0 0.0.0.0:902             0.0.0.0:*               LISTEN      1355/vmware-authdla
+tcp6       0      0 :::902                  :::*                    LISTEN      1355/vmware-authdla
